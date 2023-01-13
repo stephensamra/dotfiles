@@ -17,3 +17,6 @@ alias mfs="php artisan migrate:fresh --seed"
 
 # Docker
 alias dc="docker compose"
+
+# Filebot
+alias organise-media='filebot -script fn:amc --action copy -non-strict "$HOME/Downloads" --def music=n --conflict auto --def clean=y --def excludeList="$HOME/.filebot-exclude-list" --def movieFormat="$HOME/Movies/{n}" --def seriesFormat="$HOME/TV Shows/{n}/Season {s}/{e} {t}" --output "$HOME/"'
