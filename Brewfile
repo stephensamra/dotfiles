@@ -17,7 +17,6 @@ brew 'mas' # Mac App Store manager
 
 # Apps
 cask '1password'
-cask 'appcleaner'
 cask 'brave-browser'
 cask 'cyberduck'
 cask 'docker'
