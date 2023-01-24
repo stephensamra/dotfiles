@@ -11,9 +11,11 @@ alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy && echo Public key copied to clipbo
 alias code="cd ~/Code"
 
 # Laravel
-alias a="php artisan"
-alias tinker="php artisan tinker"
-alias mfs="php artisan migrate:fresh --seed"
+alias sail="[ -f sail ] && sh sail || sh vendor/bin/sail"
+alias s="sail"
+alias a="sail artisan"
+alias mfs="sail artisan migrate:fresh --seed"
+alias tinker="sail tinker"
 
 # Docker
 alias dc="docker compose"
