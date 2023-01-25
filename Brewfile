@@ -40,5 +40,6 @@ cask 'zoom'
 cask 'font-fira-code'
 
 # Mac App Store
+mas 'Xcode', id: 497799835
 mas 'Numbers', id: 409203825
 mas 'Simplenote', id: 692867256
