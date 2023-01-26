@@ -39,6 +39,9 @@ if [[ ! -f "$HOME/.mackup.cfg" ]]; then
   ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 fi
 
+# Install nvm to manage node versions.
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+
 touch $HOME/.hushlogin
 
 # Set macOS preferences - we will run this last because this will reload the shell
