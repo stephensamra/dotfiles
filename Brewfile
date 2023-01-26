@@ -10,6 +10,7 @@ brew 'coreutils' # Those that come with macOS are outdated
 brew 'gh'
 brew 'git'
 brew 'grep'
+brew 'hasura-cli'
 brew 'mackup'
 brew 'mas' # Mac App Store manager
 
