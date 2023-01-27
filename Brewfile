@@ -6,16 +6,14 @@ tap 'homebrew/cask-fonts'
 
 # Binaries
 brew 'awscli'
-brew 'bash' # Latest Bash version
-brew 'coreutils' # Those that come with macOS are outdated
+brew 'bash'
+brew 'coreutils'
 brew 'gh'
 brew 'git'
 brew 'grep'
 brew 'hasura-cli'
 brew 'mackup'
-brew 'mas' # Mac App Store manager
-
-# Development
+brew 'mas'
 
 # Apps
 cask '1password'
@@ -39,7 +37,7 @@ cask 'vlc'
 cask 'zoom'
 
 # Fonts
-cask 'font-fira-code'
+# cask 'font-fira-code'
 
 # Mac App Store
 mas 'Xcode', id: 497799835
