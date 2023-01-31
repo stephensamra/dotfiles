@@ -62,3 +62,4 @@ After backing up your old Mac you may now follow these install instructions to s
 - Install Logitech Options
 - Install Outline
 - Install Opal
+- Download FileBot license from 1Password and save it to `/Users/stephen/.filebot/license.txt`
