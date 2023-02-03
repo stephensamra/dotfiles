@@ -3,7 +3,7 @@ alias zshrc="$EDITOR $HOME/.zshrc; source $HOME/.zshrc"
 alias sshconfig="$EDITOR $HOME/.ssh/config"
 alias aliases="$EDITOR $DOTFILES/aliases.zsh; source $DOTFILES/aliases.zsh"
 alias hosts="sudo $EDITOR /etc/hosts"
-alias dotfiles="vs $HOME/.dotfiles"
+alias dotfiles="cd $HOME/.dotfiles"
 
 # Copy public key to clipboard
 alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy && echo Public key copied to clipboard!"
