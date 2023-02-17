@@ -14,6 +14,7 @@ brew 'grep'
 brew 'hasura-cli'
 brew 'mackup'
 brew 'mas'
+brew 'stripe/stripe-cli/stripe'
 
 # Apps
 cask '1password'

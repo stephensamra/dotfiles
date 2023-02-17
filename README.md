@@ -58,6 +58,7 @@ After backing up your old Mac you may now follow these install instructions to s
     ```
 
 - Run `eas login`
+- Run `stripe login`
 - Download/install Dank Mono font
 - Install Logitech Options
 - Install Outline
