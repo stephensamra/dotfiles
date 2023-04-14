@@ -2,7 +2,6 @@
 alias zshrc="$EDITOR $HOME/.zshrc; source $HOME/.zshrc"
 alias sshconfig="$EDITOR $HOME/.ssh/config"
 alias aliases="$EDITOR $DOTFILES/aliases.zsh; source $DOTFILES/aliases.zsh"
-alias hosts="sudo $EDITOR /etc/hosts"
 alias dotfiles="cd $HOME/.dotfiles"
 
 # Copy public key to clipboard
@@ -12,11 +11,10 @@ alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy && echo Public key copied to clipbo
 alias code="cd ~/Code"
 
 # Laravel
-alias sail="[ -f sail ] && sh sail || sh vendor/bin/sail"
-alias s="sail"
-alias a="sail artisan"
-alias mfs="sail artisan migrate:fresh --seed"
-alias tinker="sail tinker"
+alias s="docker compose exec app"
+alias a="s artisan"
+alias mfs="s artisan migrate:fresh --seed"
+alias tinker="s tinker"
 
 # Docker
 alias dc="docker compose"
