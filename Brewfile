@@ -1,8 +1,6 @@
 # Taps
 tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
-#tap 'homebrew/cask-versions'
-#tap 'homebrew/bundle'
 
 # Binaries
 brew 'awscli'
@@ -17,10 +15,15 @@ brew 'mackup'
 brew 'mas'
 brew 'stripe/stripe-cli/stripe'
 
+# Development
+brew 'php'
+brew 'composer'
+
 # Apps
 cask '1password'
 cask 'brave-browser'
 cask 'cyberduck'
+cask 'dbngin'
 cask 'docker'
 cask 'filebot'
 cask 'helo'
