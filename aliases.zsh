@@ -15,6 +15,7 @@ alias a="php artisan"
 alias mf="a migrate:fresh"
 alias mfs="a migrate:fresh --seed"
 alias tinker="a tinker"
+alias t="./vendor/bin/pest"
 
 # Docker
 alias dc="docker compose"
@@ -23,4 +24,4 @@ alias dc="docker compose"
 alias organise-media='filebot -script fn:amc --action copy -non-strict "$HOME/Downloads" --def music=n --conflict auto --def clean=y --def excludeList="$HOME/.filebot-exclude-list" --def movieFormat="$HOME/Movies/{n}" --def seriesFormat="$HOME/TV Shows/{n}/Season {s}/{e} {t}" --output "$HOME/"'
 
 # Filebase
-alias filebase="aws --endpoint https://s3.filebase.com --region us-east-1"
+alias filebase="aws --endpoint https://s3.filebase.com --region us-east-1 s3"
