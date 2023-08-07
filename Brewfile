@@ -50,3 +50,4 @@ cask 'zoom'
 mas 'Xcode', id: 497799835
 mas 'Numbers', id: 409203825
 mas 'Simplenote', id: 692867256
+mas 'Klack', id: 6446206067
