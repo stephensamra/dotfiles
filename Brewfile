@@ -1,6 +1,7 @@
 # Taps
 tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
+tap 'hashicorp/tap'
 
 # Binaries
 brew 'awscli'
@@ -10,6 +11,7 @@ brew 'flyctl'
 brew 'gh'
 brew 'git'
 brew 'grep'
+brew 'hashicorp/tap/terraform'
 brew 'hasura-cli'
 brew 'mackup'
 brew 'mas'
