@@ -25,3 +25,10 @@ alias organise-media='filebot -script fn:amc --action copy -non-strict "$HOME/Do
 
 # Filebase
 alias filebase="aws --endpoint https://s3.filebase.com --region us-east-1 s3"
+
+# Kamal
+alias mrsk='docker run --rm -it -v $HOME/.ssh:/root/.ssh -v /var/run/docker.sock:/var/run/docker.sock -v ${PWD}/:/workdir  ghcr.io/mrsked/mrsk'
+alias kamal="docker run -it --rm -v '${PWD}:/workdir' -v '/run/host-services/ssh-auth.sock:/run/host-services/ssh-auth.sock' -e SSH_AUTH_SOCK='/run/host-services/ssh-auth.sock' -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/basecamp/kamal:latest"
+
+# Terraform
+alias tf="terraform"
