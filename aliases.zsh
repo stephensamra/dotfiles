@@ -5,10 +5,13 @@ alias aliases="nano $DOTFILES/aliases.zsh; source $DOTFILES/aliases.zsh"
 alias dotfiles="cd $HOME/.dotfiles"
 
 # Copy public key to clipboard
-alias pubkey="cat ~/.ssh/id_ed25519.pub | pbcopy && echo Public key copied to clipboard!"
+alias pubkey="cat ~/.ssh/id_ed25519.pub | pbcopy && echo Copied public key."
 
 # Nav
 alias code="cd ~/Code"
+
+# vscode
+alias vs="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
 
 # Laravel
 alias a="php artisan"
