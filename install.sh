@@ -1,11 +1,5 @@
 #!/bin/sh
 
-if test ! $(xcode-select -p 2> /dev/null); then
-  echo "Please re-run this script after Command Line Tools has been installed."
-  xcode-select --install
-  exit
-fi
-
 echo "Setting up your Mac..."
 
 # Check for Oh My Zsh and install if we don't have it
@@ -16,6 +10,9 @@ fi
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+  (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> $HOME/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
@@ -29,11 +26,7 @@ brew update
 brew tap homebrew/bundle
 brew bundle --file $HOME/.dotfiles/Brewfile
 
-# Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/valet
-
-# Install Laravel Valet
-$HOME/.composer/vendor/bin/valet install
+sudo xcodebuild -license accept
 
 # Create a Code directory
 if [[ ! -d "$HOME/Code" ]]; then
@@ -46,7 +39,9 @@ if [[ ! -f "$HOME/.mackup.cfg" ]]; then
 fi
 
 # Install nvm to manage node versions.
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+if [[ ! -d "$HOME/.nvm" ]]; then
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+fi
 
 touch $HOME/.hushlogin
 

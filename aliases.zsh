@@ -1,7 +1,7 @@
-# Edit config files
-alias zshrc="$EDITOR $HOME/.zshrc; source $HOME/.zshrc"
-alias sshconfig="$EDITOR $HOME/.ssh/config"
-alias aliases="$EDITOR $DOTFILES/aliases.zsh; source $DOTFILES/aliases.zsh"
+# Config files
+alias zshrc="nano $HOME/.zshrc; source $HOME/.zshrc"
+alias sshconfig="nano $HOME/.ssh/config"
+alias aliases="nano $DOTFILES/aliases.zsh; source $DOTFILES/aliases.zsh"
 alias dotfiles="cd $HOME/.dotfiles"
 
 # Copy public key to clipboard
