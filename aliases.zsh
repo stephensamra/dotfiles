@@ -9,6 +9,7 @@ alias pubkey="cat ~/.ssh/id_ed25519.pub | pbcopy && echo Copied public key."
 
 # Nav
 alias code="cd ~/Code"
+alias icloud="cd $HOME/Library/Mobile\ Documents/com~apple~CloudDocs"
 
 # vscode
 alias vs="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
