@@ -33,11 +33,6 @@ if [[ ! -d "$HOME/Code" ]]; then
   mkdir $HOME/Code
 fi
 
-# Symlink the Mackup config file to the home directory
-if [[ ! -f "$HOME/.mackup.cfg" ]]; then
-  ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
-fi
-
 # Install nvm to manage node versions.
 if [[ ! -d "$HOME/.nvm" ]]; then
   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
@@ -47,5 +42,12 @@ touch $HOME/.hushlogin
 
 # Set macOS preferences - we will run this last because this will reload the shell
 source $HOME/.dotfiles/.macos
+
+# Add the backup job to launchd.
+# if [[ ! -d "$HOME/Library/LaunchAgents" ]]; then
+#   mkdir "$HOME/Library/LaunchAgents"
+# fi
+# ln -s $HOME/.dotfiles/local.backup.plist $HOME/Library/LaunchAgents/local.backup.plist
+# launchctl load $HOME/Library/LaunchAgents/local.backup.plist
 
 echo "Done. Please restart your computer for these changes to take effect."

@@ -1,0 +1,90 @@
+# My files
+Documents
+Fonts
+Keys
+# Movies
+Music
+Pictures
+# TV Shows
+
+# AWS
+.aws
+
+# Brave Browser
+Library/Application Support/BraveSoftware/Brave-Browser/Default/Preferences
+Library/Preferences/com.brave.Browser.plist
+
+# Cyberduck
+Library/Preferences/ch.sudo.cyberduck.plist
+
+# DBngin
+Library/Preferences/com.tinyapp.DBngin.plist
+Library/Preferences/com.tinyapp.DBnginMenuHelper.plist
+
+# Git
+.gitconfig
+
+# HELO
+Library/Preferences/de.beyondco.helo.plist
+
+# Herd
+Library/Preferences/de.beyondco.herd.plist
+
+# iTerm2
+# Library/Preferences/com.googlecode.iterm2.plist
+
+# Keyboard shortcuts
+Library/Preferences/com.apple.symbolichotkeys.plist
+
+# Logi Options+
+Library/Preferences/com.logi.cp-dev-mgr.plist
+Library/Preferences/com.logi.optionsplus.driverhost.plist
+Library/Preferences/com.logi.optionsplus.plist
+
+# Outline Manager
+Library/Preferences/com.electron.outline-manager.plist
+
+# Plex
+Library/Preferences/com.plexapp.plexmediaserver.plist
+
+# Ray
+Library/Preferences/be.spatie.ray.plist
+
+# Raycast
+Library/Preferences/com.raycast.macos.plist
+
+# Rectangle
+Library/Preferences/com.knollsoft.Rectangle.plist
+
+# SSH
+.ssh/config
+
+# TablePlus
+Library/Application Support/com.tinyapp.TablePlus/Cache/Favorite
+Library/Application Support/com.tinyapp.TablePlus/Cache/History
+Library/Application Support/com.tinyapp.TablePlus/Data
+Library/Application Support/com.tinyapp.TablePlus/Plugins
+Library/Preferences/com.tinyapp.TablePlus.plist
+
+# Telegram
+Library/Preferences/ru.keepcoder.Telegram.plist
+
+# Terminal
+Library/Preferences/com.apple.Terminal.plist
+
+# Tinkerwell
+Library/Preferences/de.beyondco.tinkerwell.plist
+
+# Transmission
+Library/Preferences/org.m0k.transmission.plist
+
+# VLC
+Library/Application Support/org.videolan.vlc
+Library/Preferences/org.videolan.vlc
+Library/Preferences/org.videolan.vlc.plist
+
+# Visual Studio Code
+Library/Application Support/Code/User/snippets
+Library/Application Support/Code/User/keybindings.json
+Library/Application Support/Code/User/settings.json
+Library/Preferences/com.microsoft.VSCode.plist

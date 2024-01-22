@@ -12,7 +12,6 @@ brew 'git'
 brew 'grep'
 brew 'hashicorp/tap/terraform'
 brew 'hasura-cli'
-brew 'mackup'
 brew 'mas'
 brew 'stripe/stripe-cli/stripe'
 

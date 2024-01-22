@@ -3,32 +3,29 @@
 ## Backup checklist
 
 1. Commit/push repos/branches in `~/Code`
-1. Save important variables from `~/Code/**/*.env`files
-1. Save important files from:
-    - Desktop
-    - Documents
-    - Downloads
-    - Movies
-    - Music
-    - Pictures
-    - TV Shows
+1. Save important variables from `.env`files
 1. Export important data from local databases
-1. Export iTerm2 profile
-1. Export Rectangle config
 1. Run `brew list` and ensure it's in sync with `Brewfile`
 1. Run `npm list --global --depth=0` and make sure it's in sync with `.npm`
-1. Run `mackup backup -f`
+1. Run `./backup.sh`
 
 ## New Mac checklist
 
 1. Update macOS to the latest version through system preferences
-1. Clone these dotfiles: `git clone git@github.com:stephensamra/dotfiles.git ~/.dotfiles`
-1. Run the installation: `~/.dotfiles/install.sh`
-1. Restore mackup backups: `mackup restore -f`
-1. Restart to finalise the process
+1. Clone: `git clone git@github.com:stephensamra/dotfiles.git ~/.dotfiles`
+1. Run: `~/.dotfiles/install.sh`
+1. Restart
 
-### Post install steps
-
+### Post install
+1. Sign-in to 1Password and copy SSH keys to `~/.ssh`:
+    ```zsh
+    op signin
+    op read "op://Personal/personal/private key" > ~/.ssh/id_ed25519
+    op read "op://Personal/personal/public key" > ~/.ssh/id_ed25519.pub
+    chmod 600 ~/.ssh/id_ed25519
+    ```
+1. Restore files: `./restore.sh`
+1. Install Dank Mono font
 1. System settings:
     - Control Center
         - Menu Bar tweaks
@@ -58,16 +55,8 @@
         - Use as Defaults
 1. Install/use latest LTS version of node: `nvm install lts/hydrogen`
 1. Install global node packages: `npm --global install $(cat .npm | tr '\n' ' ')`
-1. Download/install Dank Mono font
 1. Download/install [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html)
 1. Download/install [Opal](https://opalcamera.com/opal-composer/download)
-1. Copy SSH key(s) from 1Password (open 1Password.app and sign-in first)
-    ```zsh
-    op signin
-    op read "op://Personal/personal/private key" > ~/.ssh/id_ed25519
-    op read "op://Personal/personal/public key" > ~/.ssh/id_ed25519.pub
-    chmod 600 ~/.ssh/id_ed25519
-    ```
 1. Copy FileBot license from 1Password:
     ```zsh
     mkdir ~/.filebot
@@ -83,26 +72,16 @@
     stripe login
     ```
 1. DBngin: create a MySQL database
-1. HELO
-    - Activate license
-    - Disable link checking
+1. HELO: activate license
 1. Herd
     - Remove `~/Herd` from paths list
-    - Set terminal to iTerm2
     - Configure to use `~/Code` directory:
         ```sh
         cd ~/Code
         herd park
         rmdir ~/Herd
         ```
-1. iTerm2
-    - Appearance:
-        - General > Theme > Minimal
-        - Dimming > Dim inactive split panes > (disable)
-    - Profiles: Import JSON Profiles...
-    - Keys: Import
-1. Klack
-1. Logi+ Options: set up mouse
+1. Logi Options+: set up mouse
 1. Orbstack
 1. Opal
 1. Outline Manager: sign-in to DigitalOcean
@@ -110,14 +89,10 @@
     - Sign-in
     - Set up libraries for `~/Movies` & `~/TV Shows`
 1. Ray: activate license
-1. Raycast: Advanced > Import
-1. Rectangle: import config
 1. Simplenote: sign-in
 1. TablePlus: ...
 1. Telegram: sign-in
 1. Tinkerwell: activate license
-1. Transmission
 1. VS Code:
     - Install extensions:
         - ...
-1. VLC
