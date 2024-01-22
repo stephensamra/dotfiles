@@ -41,6 +41,9 @@ Library/Preferences/com.logi.cp-dev-mgr.plist
 Library/Preferences/com.logi.optionsplus.driverhost.plist
 Library/Preferences/com.logi.optionsplus.plist
 
+# MonitorControl
+Library/Preferences/me.guillaumeb.MonitorControl.plist
+
 # Outline Manager
 Library/Preferences/com.electron.outline-manager.plist
 
