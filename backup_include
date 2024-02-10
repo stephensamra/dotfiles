@@ -30,6 +30,9 @@ Library/Preferences/de.beyondco.helo.plist
 # Herd
 Library/Preferences/de.beyondco.herd.plist
 
+# Inkdrop
+Library/Application Support/inkdrop
+
 # iTerm2
 # Library/Preferences/com.googlecode.iterm2.plist
 
