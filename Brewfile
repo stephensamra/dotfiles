@@ -4,6 +4,7 @@ tap 'hashicorp/tap'
 tap 'stripe/stripe-cli'
 
 # Binaries
+brew 'ansible'
 brew 'awscli'
 brew 'bash'
 brew 'coreutils'
