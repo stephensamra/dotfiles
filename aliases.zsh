@@ -3,6 +3,7 @@ alias zshrc="nano $HOME/.zshrc; source $HOME/.zshrc"
 alias sshconfig="nano $HOME/.ssh/config"
 alias aliases="nano $DOTFILES/aliases.zsh; source $DOTFILES/aliases.zsh"
 alias dotfiles="cd $HOME/.dotfiles"
+alias known_hosts="nano $HOME/.ssh/known_hosts"
 
 # Copy public key to clipboard
 alias pubkey="cat ~/.ssh/id_ed25519.pub | pbcopy && echo Copied public key."
