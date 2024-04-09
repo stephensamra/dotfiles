@@ -10,8 +10,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 export EDITOR=nano
-export LC_ALL=en_IE.UTF-8
-export LANG=en_IE.UTF-8
+export LC_ALL=en_GB.UTF-8
+export LANG=en_GB.UTF-8
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
