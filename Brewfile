@@ -8,6 +8,7 @@ brew 'ansible'
 brew 'awscli'
 brew 'bash'
 brew 'coreutils'
+brew 'flyctl'
 brew 'gh'
 brew 'git'
 brew 'grep'
@@ -16,6 +17,7 @@ brew 'hasura-cli'
 brew 'mas'
 brew 'stripe/stripe-cli/stripe'
 brew 'tree'
+brew 'webp'
 
 # Development
 
