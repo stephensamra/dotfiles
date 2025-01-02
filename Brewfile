@@ -16,6 +16,7 @@ brew 'hashicorp/tap/terraform'
 brew 'hasura-cli'
 brew 'mas'
 brew 'stripe/stripe-cli/stripe'
+brew 'tmux'
 brew 'tree'
 brew 'webp'
 
